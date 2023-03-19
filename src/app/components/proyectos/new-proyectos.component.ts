@@ -26,9 +26,9 @@ export class NewProyectosComponent implements OnInit {
     public imageService: ImageService) { }
     
   
-  ngOnInit(): void {
-   
-  }
+    ngOnInit(): void {
+      this.proyectos = new Proyectos('', '', '');
+    }
 
   onCreate(): void{
     const proyectos = new Proyectos(this.nombreP, this.descripcionP, this.imgP);
